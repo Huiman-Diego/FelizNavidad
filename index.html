@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Galeria Fotos</title>
+</head>
+<body>
+	<section class="contenido">
+		<div class="mostrador" id="mostrador">
+			<div class="fila">
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/qwerty.jpg" alt="">
+						<p class="descripcion">Pinguinos</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/arbol.jpg" alt="">
+						<p class="descripcion">Arbol</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/campa.jpg" alt="">
+						<p class="descripcion">Campanas</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/media.jpg" alt="">
+						<p class="descripcion">Medias</p>
+					</div>
+				</div>
+			</div>
+			<div class="fila">
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/galleta.jpg" alt="">
+						<p class="descripcion">Galleta</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/nieve.jpg" alt="">
+						<p class="descripcion">Muñeco de Nieve</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/reno.png" alt="">
+						<p class="descripcion">Rodolfo el Reno</p>
+					</div>
+				</div>
+				<div class="item" onclick="cargar(this)">
+					<div class="contenedor-foto">
+						<img src="img/santa.jpg" alt="">
+						<p class="descripcion">Papá Noel</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+		<div class="seleccion" id="seleccion">
+			<div class="cerrar"onclick="cerrar()">
+				&#x2715
+			</div>
+			<div class="info">
+				<img src="img/qwerty.jpg" alt="" id="img">
+				<h2 id="modelo">Pinguinos de Navidad</h2>
+				<p id="descripcion">Descripcion modelo 1</p>
+
+				<span class="precio" id="precio">Precio</span>
+			</div>
+		</div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
